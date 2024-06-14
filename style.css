@@ -1,8 +1,10 @@
 :root {
-  --pale-blue: hsl(243, 100%, 93%);
+  --pale-blue: #dddbff;
   --grayish-blue: hsl(229, 7%, 55%);
   --dark-blue: hsl(228, 56%, 26%);
-  --very-dark-blue: hsl(229, 57%, 11%);
+  --very-dark-blue: #0c122c;
+  --gradient-1: hsl(6, 100%, 80%);
+  --gradient-2: hsl(335, 100%, 65%);
 }
 
 body {
@@ -17,4 +19,12 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+#container1 {
+  background-color: var(--dark-blue);
+}
+
+.image-container {
+  background-color: var(--very-dark-blue);
 }
