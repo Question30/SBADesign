@@ -55,8 +55,17 @@
         </div>
       </div>
       <div class="d-flex flex-column align-items-center" id="bottom-container">
-        <p id="text">You've used <span>815 GB</span> of your storage 185</p>
-        GB Left 0 GB 1000 GB
+        <p id="text">You've used <span>815 GB</span> of your storage</p>
+        <div class="d-flex align-items-center" id="progress-outer">
+          <div
+            class="d-flex justify-content-end align-items-center"
+            id="progress-innner"
+          >
+            <div id="circle"></div>
+          </div>
+        </div>
+        <div id="storage">0 GB 1000 GB</div>
+        185 GB Left
       </div>
     </div>
     <script

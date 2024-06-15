@@ -14,6 +14,7 @@ body {
   background-repeat: no-repeat;
   font-family: "Raleway";
   font-size: 14px;
+  color: var(--pale-blue);
 }
 
 #top-container {
@@ -51,16 +52,43 @@ body {
   background-color: var(--dark-blue);
   border-radius: 10px;
   width: 328px;
-  height: 160px;
+  max-height: 160px;
   padding: 30px 12px;
   gap: 12px;
 }
 
 #text {
   font-weight: 400;
-  color: var(--grayish-blue);
 }
 
 span {
   font-weight: 700;
+}
+
+#progress-outer {
+  width: 258px;
+  height: 20px;
+  padding: 1px;
+  gap: 42px;
+  background-color: var(--very-dark-blue);
+  border-radius: 10px;
+}
+
+#progress-innner {
+  width: 194px;
+  height: 14px;
+  padding: 0px 2px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    90deg,
+    var(--gradient-1),
+    var(--gradient-2)
+  );
+}
+
+#circle {
+  width: 9px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: var(--pale-blue);
 }
