@@ -28,10 +28,10 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body
-    class="h-100 d-flex flex-sm-colummn justify-content-center align-items-center gap-2"
+    class="vh-100 d-flex flex-md-colummn justify-content-center align-items-center gap-2"
   >
     <div
-      class="d-flex flex-column justify-content-center align-items-center"
+      class="d-flex flex-column flex-sm-row justify-content-center align-items-center"
       id="main"
     >
       <div class="d-flex flex-column align-items-start" id="top-container">
@@ -54,8 +54,13 @@
           </div>
         </div>
       </div>
-      <div class="d-flex flex-column align-items-center" id="bottom-container">
-        <p id="text">You've used <span>815 GB</span> of your storage</p>
+      <div
+        class="d-flex flex-column flex-sm-row align-items-center"
+        id="bottom-container"
+      >
+        <p class="mb-0" id="text">
+          You've used <span>815 GB</span> of your storage
+        </p>
         <div class="d-flex align-items-center" id="progress-outer">
           <div
             class="d-flex justify-content-end align-items-center"
@@ -64,8 +69,20 @@
             <div id="circle"></div>
           </div>
         </div>
-        <div id="storage">0 GB 1000 GB</div>
-        185 GB Left
+        <div
+          class="d-flex justify-content-center align-items-center"
+          id="storage"
+        >
+          <p>0 GB</p>
+          <p>1000 GB</p>
+        </div>
+        <div
+          class="d-flex justify-content-center align-items-center order-sm-0 pt-4"
+          id="floater"
+        >
+          <p id="number">185</p>
+          <p id="gigs">GB Left</p>
+        </div>
       </div>
     </div>
     <script

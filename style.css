@@ -9,7 +9,7 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 6px 10px;
   background-image: url("images/bg-mobile.png");
   background-repeat: no-repeat;
   font-family: "Raleway";
@@ -91,4 +91,30 @@ span {
   height: 10px;
   border-radius: 100%;
   background-color: var(--pale-blue);
+}
+
+#storage {
+  height: 18px;
+  gap: 182px;
+  font-weight: 700;
+}
+
+#floater {
+  width: 180px;
+  height: 73px;
+  padding: 15px 6px;
+  gap: 7px;
+  background-color: white;
+  color: var(--very-dark-blue);
+  border-radius: 10px;
+}
+
+#number {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#gigs {
+  color: var(--grayish-blue);
+  font-weight: 700;
 }
