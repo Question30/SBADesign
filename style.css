@@ -12,19 +12,55 @@ body {
   padding: 0;
   background-image: url("images/bg-mobile.png");
   background-repeat: no-repeat;
-}
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+  font-family: "Raleway";
+  font-size: 14px;
 }
 
-#container1 {
+#top-container {
   background-color: var(--dark-blue);
+  width: 328px;
+  height: 201px;
+  gap: 32px;
+  padding: 41px 43px;
+  border-radius: 10px 100px 10px 10px;
+}
+
+#logo {
+  height: 135px;
+  width: 40px;
+}
+#images-container {
+  gap: 17px;
 }
 
 .image-container {
+  display: flex;
   background-color: var(--very-dark-blue);
+  height: 47px;
+  width: 48px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+#main {
+  gap: 20px;
+}
+
+#bottom-container {
+  background-color: var(--dark-blue);
+  border-radius: 10px;
+  width: 328px;
+  height: 160px;
+  padding: 30px 12px;
+  gap: 12px;
+}
+
+#text {
+  font-weight: 400;
+  color: var(--grayish-blue);
+}
+
+span {
+  font-weight: 700;
 }
