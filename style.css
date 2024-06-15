@@ -15,6 +15,8 @@ body {
   font-family: "Raleway";
   font-size: 14px;
   color: var(--pale-blue);
+  min-height: 100vh;
+  background-size: cover;
 }
 
 #top-container {
@@ -59,6 +61,7 @@ body {
 
 #text {
   font-weight: 400;
+  width: 100%;
 }
 
 span {
@@ -66,7 +69,6 @@ span {
 }
 
 #progress-outer {
-  width: 258px;
   height: 20px;
   padding: 1px;
   gap: 42px;
@@ -75,7 +77,7 @@ span {
 }
 
 #progress-innner {
-  width: 194px;
+  width: 81%;
   height: 14px;
   padding: 0px 2px;
   border-radius: 10px;
@@ -103,7 +105,7 @@ span {
   width: 180px;
   height: 73px;
   padding: 15px 6px;
-  gap: 7px;
+  gap: 6px;
   background-color: white;
   color: var(--very-dark-blue);
   border-radius: 10px;
@@ -117,4 +119,34 @@ span {
 #gigs {
   color: var(--grayish-blue);
   font-weight: 700;
+}
+
+@media (min-width: 576px) {
+  body {
+    background-image: url(./images/bg-desktop.png);
+    background-size: 100vw 50%;
+    background-position: bottom;
+    background-color: var(--very-dark-blue);
+  }
+  #bottom-container {
+    width: 543px;
+    gap: 16px;
+    padding: 32px 40px;
+  }
+
+  #floater {
+    padding: 10px 24px;
+  }
+
+  #triangle {
+    width: 46px;
+    height: 32px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid white;
+    transform: rotate(41deg);
+    left: 35px;
+    top: 20px;
+    position: relative;
+  }
 }

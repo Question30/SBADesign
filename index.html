@@ -25,13 +25,10 @@
 
     <title>Frontend Mentor | Fylo data storage component</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
-  <body
-    class="vh-100 d-flex flex-md-colummn justify-content-center align-items-center gap-2"
-  >
+  <body class="vh-100 d-flex justify-content-center align-items-center gap-2">
     <div
-      class="d-flex flex-column flex-sm-row justify-content-center align-items-center"
+      class="d-flex flex-column flex-sm-row justify-content-center align-items-end"
       id="main"
     >
       <div class="d-flex flex-column align-items-start" id="top-container">
@@ -55,13 +52,16 @@
         </div>
       </div>
       <div
-        class="d-flex flex-column flex-sm-row align-items-center"
+        class="d-flex flex-column align-items-center align-items-sm-end justify-content-sm-end"
         id="bottom-container"
       >
-        <p class="mb-0" id="text">
+        <p class="mb-0 order-sm-1" id="text">
           You've used <span>815 GB</span> of your storage
         </p>
-        <div class="d-flex align-items-center" id="progress-outer">
+        <div
+          class="d-flex align-items-center align-self-stretch order-sm-2"
+          id="progress-outer"
+        >
           <div
             class="d-flex justify-content-end align-items-center"
             id="progress-innner"
@@ -70,10 +70,10 @@
           </div>
         </div>
         <div
-          class="d-flex justify-content-center align-items-center"
+          class="d-flex justify-content-between align-items-center order-sm-3 align-self-stretch"
           id="storage"
         >
-          <p>0 GB</p>
+          <p class>0 GB</p>
           <p>1000 GB</p>
         </div>
         <div
@@ -82,6 +82,7 @@
         >
           <p id="number">185</p>
           <p id="gigs">GB Left</p>
+          <div class="d-sm-none d-md-block" id="triangle"></div>
         </div>
       </div>
     </div>
