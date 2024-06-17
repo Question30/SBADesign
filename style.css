@@ -23,14 +23,12 @@ body {
   background-color: var(--dark-blue);
   width: 328px;
   height: 201px;
-  gap: 32px;
   padding: 41px 43px;
   border-radius: 10px 100px 10px 10px;
 }
 
 #logo {
   height: 135px;
-  width: 40px;
 }
 #images-container {
   gap: 17px;
@@ -97,7 +95,6 @@ span {
 
 #storage {
   height: 18px;
-  gap: 182px;
   font-weight: 700;
 }
 
